@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://bt0jkk08jo268"]
+
+[ext_resource type="Texture2D" uid="uid://5gm3154osfu1" path="res://free-swamp-game-tileset-pixel-art/4 Animated objects/Rune.png" id="1_614p5"]
+[ext_resource type="Script" uid="uid://bwwcnqa4vxu40" path="res://Escenas/runa.gd" id="1_ayj4s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ayj4s"]
+radius = 5.0
+height = 16.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spx81"]
+atlas = ExtResource("1_614p5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbjvc"]
+atlas = ExtResource("1_614p5")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75mqv"]
+atlas = ExtResource("1_614p5")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2eww"]
+atlas = ExtResource("1_614p5")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_61rpm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_spx81")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xbjvc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75mqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2eww")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Runa" type="Area2D"]
+script = ExtResource("1_ayj4s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -1)
+shape = SubResource("CapsuleShape2D_ayj4s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.5, -1)
+scale = Vector2(0.9375, 1)
+sprite_frames = SubResource("SpriteFrames_61rpm")
+autoplay = "default"
+frame_progress = 0.04650803
+
+[connection signal="body_entered" from="." to="." method="_rune_grabbed"]

@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=3 uid="uid://c1b4du3ei14l3"]
+
+[ext_resource type="Texture2D" uid="uid://o4vvmw4ob3tk" path="res://free-swamp-game-tileset-pixel-art/2 Background/Layers/1.png" id="1_mcgld"]
+[ext_resource type="PackedScene" uid="uid://bk3td2eccldrc" path="res://Escenas/mapa.tscn" id="1_p3l8c"]
+[ext_resource type="PackedScene" uid="uid://lmj2auljt75u" path="res://Escenas/jugador.tscn" id="2_4jagt"]
+[ext_resource type="Texture2D" uid="uid://bnng8myh3dep4" path="res://free-swamp-game-tileset-pixel-art/2 Background/Layers/2.png" id="2_x13b4"]
+[ext_resource type="PackedScene" uid="uid://dvh707owuffq8" path="res://Escenas/caja.tscn" id="3_y5s87"]
+[ext_resource type="PackedScene" uid="uid://bt0jkk08jo268" path="res://Escenas/runa.tscn" id="4_p3l8c"]
+[ext_resource type="PackedScene" uid="uid://n3samc4jgpv0" path="res://Escenas/hud_runas.tscn" id="5_de2ht"]
+[ext_resource type="Script" uid="uid://cckut2x7nqg8l" path="res://Escenas/transition_area.gd" id="7_x13b4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_de2ht"]
+size = Vector2(1152, 20)
+
+[node name="escena_principal_1" type="Node2D"]
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(573.5, 323.5)
+scale = Vector2(1.9982638, 1.9907408)
+texture = ExtResource("1_mcgld")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(575.5, 325)
+scale = Vector2(1.9913194, 1.9814814)
+texture = ExtResource("2_x13b4")
+
+[node name="Mapa" parent="." instance=ExtResource("1_p3l8c")]
+position = Vector2(458, 265)
+
+[node name="jugador" parent="." instance=ExtResource("2_4jagt")]
+position = Vector2(463, 266)
+
+[node name="Camera2D" type="Camera2D" parent="jugador"]
+position = Vector2(-2, -1)
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 1
+limit_right = 1151
+limit_bottom = 647
+
+[node name="hud_runas" parent="jugador" instance=ExtResource("5_de2ht")]
+
+[node name="caja" parent="." instance=ExtResource("3_y5s87")]
+position = Vector2(606, 269)
+mass = 0.052
+
+[node name="runa2" parent="." instance=ExtResource("4_p3l8c")]
+position = Vector2(603, 206)
+
+[node name="runa3" parent="." instance=ExtResource("4_p3l8c")]
+position = Vector2(566, 332)
+
+[node name="runa" parent="." instance=ExtResource("4_p3l8c")]
+position = Vector2(603, 233)
+
+[node name="transition_area" type="Area2D" parent="."]
+position = Vector2(-19, 103)
+script = ExtResource("7_x13b4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="transition_area"]
+position = Vector2(590, 362)
+shape = SubResource("RectangleShape2D_de2ht")
+
+[connection signal="body_entered" from="transition_area" to="transition_area" method="_on_body_entered"]
