@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://0h5x1pm8vl0y"]
+[gd_scene load_steps=4 format=3 uid="uid://0h5x1pm8vl0y"]
 
+[ext_resource type="Script" uid="uid://c5ugjkko01xr4" path="res://Escenas/menu_principal.gd" id="1_ft1ng"]
 [ext_resource type="Texture2D" uid="uid://o4vvmw4ob3tk" path="res://free-swamp-game-tileset-pixel-art/2 Background/Layers/1.png" id="1_xv3xs"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ft1ng"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ft1ng")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -22,7 +24,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ft1ng")
 
-[node name="Label" type="Label" parent="."]
+[node name="Title" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -37,7 +39,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Nombre del juego"
 
-[node name="Button" type="Button" parent="."]
+[node name="Iniciar" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -52,7 +54,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Iniciar Partida"
 
-[node name="Button2" type="Button" parent="."]
+[node name="Salir" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -66,3 +68,5 @@ offset_bottom = 147.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Salir"
+
+[connection signal="pressed" from="Iniciar" to="." method="_on_iniciar_pressed"]
