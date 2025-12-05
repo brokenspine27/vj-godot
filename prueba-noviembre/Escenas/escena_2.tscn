@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1nu1lrtppo4l"]
+[gd_scene load_steps=2 format=3 uid="uid://rfd7fdvpsh33"]
 
-[ext_resource type="PackedScene" uid="uid://c1nu1lrtppo4l" path="res://Escenas/escena_2.tscn" id="1_qwqrc"]
+[ext_resource type="PackedScene" uid="uid://bn777qerhhs5m" path="res://Escenas/escena_2_nueva.tscn" id="1_qwqrc"]
 
-[node name="escena_2" instance=ExtResource("1_qwqrc")]
+[node name="Node2D" type="Node2D"]
 
-[node name="Background1" parent="." index="1"]
-position = Vector2(578, 325.00003)
+[node name="escena_principal_1" parent="." instance=ExtResource("1_qwqrc")]
+position = Vector2(3, 2)
