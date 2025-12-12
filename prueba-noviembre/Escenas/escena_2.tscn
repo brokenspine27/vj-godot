@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://rfd7fdvpsh33"]
+[gd_scene load_steps=15 format=3 uid="uid://rfd7fdvpsh33"]
 
 [ext_resource type="Texture2D" uid="uid://bi0apy4k6c4sn" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Layers/3.png" id="2_0w31f"]
 [ext_resource type="Texture2D" uid="uid://bnng8myh3dep4" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Layers/2.png" id="2_rngm7"]
@@ -9,9 +9,15 @@
 [ext_resource type="Script" uid="uid://b6aooxx1p315y" path="res://Escenas/transition_2.gd" id="9_0w31f"]
 [ext_resource type="PackedScene" uid="uid://byu5su7gl7dpk" path="res://Escenas/mapa2.tscn" id="9_1f2m0"]
 [ext_resource type="Texture2D" uid="uid://cfxqcsctl0id5" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Layers/5.png" id="9_1kwhq"]
+[ext_resource type="Script" uid="uid://d2tmtp6r3te7g" path="res://Escenas/jumpscare_area.gd" id="10_1kwhq"]
+[ext_resource type="Texture2D" uid="uid://65nfeg5dqqvs" path="res://Escenas/moon_horror.jpg" id="11_1f2m0"]
+[ext_resource type="AudioStream" uid="uid://bwe2wrtscq6xy" path="res://Assets/Sounds/jumpscare-4-206597.mp3" id="11_bot0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1kwhq"]
 size = Vector2(1150, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f2m0"]
+size = Vector2(93, 74)
 
 [node name="escena_principal_1" type="Node2D"]
 
@@ -24,6 +30,12 @@ texture = ExtResource("2_rngm7")
 position = Vector2(574, 320.50003)
 scale = Vector2(1.9965277, 1.9907408)
 texture = ExtResource("2_0w31f")
+
+[node name="5" type="Sprite2D" parent="."]
+visibility_layer = 16
+position = Vector2(575.5, 321.99997)
+scale = Vector2(1.9947917, 1.993827)
+texture = ExtResource("9_1kwhq")
 
 [node name="jugador" parent="." instance=ExtResource("4_68v1l")]
 position = Vector2(463, 266)
@@ -54,11 +66,6 @@ position = Vector2(374, 419)
 [node name="runa4" parent="." instance=ExtResource("7_i624k")]
 position = Vector2(856, 142)
 
-[node name="5" type="Sprite2D" parent="."]
-position = Vector2(575.5, 321.99997)
-scale = Vector2(1.9947917, 1.993827)
-texture = ExtResource("9_1kwhq")
-
 [node name="transition_2" type="Area2D" parent="."]
 script = ExtResource("9_0w31f")
 
@@ -69,4 +76,22 @@ shape = SubResource("RectangleShape2D_1kwhq")
 [node name="Mapa" parent="." instance=ExtResource("9_1f2m0")]
 position = Vector2(28, 119)
 
+[node name="jumpscare_area" type="Area2D" parent="."]
+script = ExtResource("10_1kwhq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jumpscare_area"]
+position = Vector2(1064, 467)
+shape = SubResource("RectangleShape2D_1f2m0")
+
+[node name="jump_scare" type="AudioStreamPlayer2D" parent="jumpscare_area"]
+stream = ExtResource("11_bot0m")
+
+[node name="MoonHorror" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1003, 433.49997)
+scale = Vector2(0.47666657, 0.475)
+texture = ExtResource("11_1f2m0")
+
 [connection signal="body_entered" from="transition_2" to="transition_2" method="_on_body_entered"]
+[connection signal="body_entered" from="jumpscare_area" to="jumpscare_area" method="_on_body_entered"]
+[connection signal="body_exited" from="jumpscare_area" to="jumpscare_area" method="_on_body_exited"]
