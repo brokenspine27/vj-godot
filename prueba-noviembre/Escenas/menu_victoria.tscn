@@ -8,7 +8,7 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opkeq"]
 bg_color = Color(0.08837687, 0.036727432, 0.15150386, 1)
 
-[node name="Menu_muerte" type="Control"]
+[node name="Menu_victoria" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -88,3 +88,4 @@ theme_override_colors/font_pressed_color = Color(0.8968147, 0.0033470124, 0.8071
 text = "Salir"
 
 [connection signal="pressed" from="Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

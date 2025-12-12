@@ -4,7 +4,7 @@ func _on_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
 
 		# --- Condición de victoria ---
-		if Global.runas >= 6:
+		if Global.runas >= 7:
 			get_tree().call_deferred("change_scene_to_file", "res://Escenas/menu_victoria.tscn")
 			return
 

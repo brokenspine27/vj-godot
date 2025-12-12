@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4qxnqsqhuln2" path="res://Escenas/menu_muerte.gd" id="1_abta1"]
 [ext_resource type="Texture2D" uid="uid://65nfeg5dqqvs" path="res://Escenas/moon_horror.jpg" id="2_aiu27"]
-[ext_resource type="Texture2D" uid="uid://bj0yhn5yhbn6r" path="res://free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png" id="2_vwqqj"]
+[ext_resource type="Texture2D" uid="uid://bj0yhn5yhbn6r" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png" id="2_vwqqj"]
 [ext_resource type="FontFile" uid="uid://du5eg32ge5lhm" path="res://Assets/Fonts/Kings-Regular.ttf" id="3_g0ymj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opkeq"]
@@ -84,3 +84,4 @@ theme_override_colors/font_pressed_color = Color(0.8968147, 0.0033470124, 0.8071
 text = "Salir"
 
 [connection signal="pressed" from="Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

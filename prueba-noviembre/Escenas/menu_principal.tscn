@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://0h5x1pm8vl0y"]
 
 [ext_resource type="Script" uid="uid://c5ugjkko01xr4" path="res://Escenas/menu_principal.gd" id="1_ft1ng"]
-[ext_resource type="Texture2D" uid="uid://bj0yhn5yhbn6r" path="res://free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png" id="2_15krf"]
+[ext_resource type="Texture2D" uid="uid://bj0yhn5yhbn6r" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png" id="2_15krf"]
 [ext_resource type="FontFile" uid="uid://du5eg32ge5lhm" path="res://Assets/Fonts/Kings-Regular.ttf" id="2_d8lex"]
-[ext_resource type="Texture2D" uid="uid://epntt28kv6sp" path="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_1.png" id="3_yo4kt"]
-[ext_resource type="Texture2D" uid="uid://cbg8jq7nn02b" path="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_2.png" id="4_15krf"]
-[ext_resource type="Texture2D" uid="uid://dw16fk64dfoas" path="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_3.png" id="5_j2d8q"]
+[ext_resource type="Texture2D" uid="uid://epntt28kv6sp" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_1.png" id="3_yo4kt"]
+[ext_resource type="Texture2D" uid="uid://cbg8jq7nn02b" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_2.png" id="4_15krf"]
+[ext_resource type="Texture2D" uid="uid://dw16fk64dfoas" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_3.png" id="5_j2d8q"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opkeq"]
 bg_color = Color(0.08837687, 0.036727432, 0.15150386, 1)
@@ -100,3 +100,4 @@ scale = Vector2(0.4609375, 0.4609375)
 texture = ExtResource("5_j2d8q")
 
 [connection signal="pressed" from="Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
