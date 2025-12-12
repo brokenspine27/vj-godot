@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://c1b4du3ei14l3"]
 
-[ext_resource type="Texture2D" uid="uid://o4vvmw4ob3tk" path="res://free-swamp-game-tileset-pixel-art/2 Background/Layers/1.png" id="1_mcgld"]
+[ext_resource type="Texture2D" uid="uid://o4vvmw4ob3tk" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Layers/1.png" id="1_mcgld"]
 [ext_resource type="PackedScene" uid="uid://bk3td2eccldrc" path="res://Escenas/mapa.tscn" id="1_p3l8c"]
 [ext_resource type="PackedScene" uid="uid://lmj2auljt75u" path="res://Escenas/jugador.tscn" id="2_4jagt"]
-[ext_resource type="Texture2D" uid="uid://bnng8myh3dep4" path="res://free-swamp-game-tileset-pixel-art/2 Background/Layers/2.png" id="2_x13b4"]
+[ext_resource type="Texture2D" uid="uid://bnng8myh3dep4" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Layers/2.png" id="2_x13b4"]
 [ext_resource type="PackedScene" uid="uid://dvh707owuffq8" path="res://Escenas/caja.tscn" id="3_y5s87"]
 [ext_resource type="PackedScene" uid="uid://bt0jkk08jo268" path="res://Escenas/runa.tscn" id="4_p3l8c"]
 [ext_resource type="PackedScene" uid="uid://n3samc4jgpv0" path="res://Escenas/hud_runas.tscn" id="5_de2ht"]
@@ -60,5 +60,12 @@ script = ExtResource("7_x13b4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="transition_area"]
 position = Vector2(590, 362)
 shape = SubResource("RectangleShape2D_de2ht")
+
+[node name="instruction" type="Label" parent="."]
+offset_left = 435.0
+offset_top = 156.0
+offset_right = 475.0
+offset_bottom = 179.0
+text = "prueba conseguir las runas antes de caer al vacío"
 
 [connection signal="body_entered" from="transition_area" to="transition_area" method="_on_body_entered"]

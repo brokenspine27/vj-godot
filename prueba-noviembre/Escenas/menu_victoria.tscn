@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://dsn3h2qk6ctsc"]
+
+[ext_resource type="Script" uid="uid://bhbd2ipx5j40v" path="res://Escenas/menu_victoria.gd" id="1_ws5bq"]
+[ext_resource type="Texture2D" uid="uid://bj0yhn5yhbn6r" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png" id="2_bx702"]
+[ext_resource type="Texture2D" uid="uid://65nfeg5dqqvs" path="res://Escenas/moon_horror.jpg" id="3_6x2kx"]
+[ext_resource type="FontFile" uid="uid://du5eg32ge5lhm" path="res://Assets/Fonts/Kings-Regular.ttf" id="4_sgc8u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opkeq"]
+bg_color = Color(0.08837687, 0.036727432, 0.15150386, 1)
+
+[node name="Menu_victoria" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ws5bq")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_opkeq")
+
+[node name="Starfield02512x512" type="Sprite2D" parent="Panel"]
+position = Vector2(576, 322.5)
+scale = Vector2(2.2539063, 1.2675781)
+texture = ExtResource("2_bx702")
+
+[node name="MoonHorror" type="Sprite2D" parent="Panel"]
+position = Vector2(1041, 72.00001)
+scale = Vector2(0.13499992, 0.1316666)
+texture = ExtResource("3_6x2kx")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -335.5
+offset_top = -243.5
+offset_right = 335.5
+offset_bottom = -44.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8410385, 0.77989465, 0.9092786, 1)
+theme_override_fonts/font = ExtResource("4_sgc8u")
+theme_override_font_sizes/font_size = 69
+text = "Ganaste, 
+gracias por probar la demo"
+
+[node name="Iniciar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.0
+offset_top = 71.0
+offset_right = 70.5
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.81494796, 8.7116656e-05, 0.65772474, 1)
+text = "Recomenzar"
+
+[node name="Salir" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = 168.0
+offset_right = 65.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.8968147, 0.0033470124, 0.80719644, 1)
+text = "Salir"
+
+[connection signal="pressed" from="Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
