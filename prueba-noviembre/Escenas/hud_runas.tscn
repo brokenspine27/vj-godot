@@ -8,19 +8,33 @@ script = ExtResource("1_d0241")
 [node name="Panel" type="Panel" parent="."]
 offset_left = 4.0
 offset_top = 22.0
-offset_right = 201.0
-offset_bottom = 66.0
+offset_right = 389.0
+offset_bottom = 63.0
 
-[node name="Label" type="Label" parent="."]
+[node name="Vidas" type="Label" parent="."]
+offset_left = 131.0
+offset_top = 30.0
+offset_right = 184.0
+offset_bottom = 53.0
+text = "Vidas:"
+
+[node name="Runas" type="Label" parent="."]
 offset_left = 14.0
 offset_top = 30.0
 offset_right = 67.0
 offset_bottom = 53.0
 text = "Runas:"
 
-[node name="numero" type="Label" parent="."]
-offset_left = 75.0
+[node name="numero_runas" type="Label" parent="."]
+offset_left = 72.0
 offset_top = 31.0
-offset_right = 115.0
+offset_right = 95.0
 offset_bottom = 54.0
 text = "0"
+
+[node name="numero_vidas" type="Label" parent="."]
+offset_left = 183.0
+offset_top = 31.0
+offset_right = 209.0
+offset_bottom = 54.0
+text = "❤️❤️❤️❤️❤️❤️"

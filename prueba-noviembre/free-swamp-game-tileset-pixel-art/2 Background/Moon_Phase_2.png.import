@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdj81jwwcrl44"
-path="res://.godot/imported/Background.png-39876db983ac41b2f92079ea5ba2c81e.ctex"
+uid="uid://cbg8jq7nn02b"
+path="res://.godot/imported/Moon_Phase_2.png-b00404ac0cdbfb3ceae7f606c084277a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/2 Background/Background.png"
-dest_files=["res://.godot/imported/Background.png-39876db983ac41b2f92079ea5ba2c81e.ctex"]
+source_file="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_2.png"
+dest_files=["res://.godot/imported/Moon_Phase_2.png-b00404ac0cdbfb3ceae7f606c084277a.ctex"]
 
 [params]
 

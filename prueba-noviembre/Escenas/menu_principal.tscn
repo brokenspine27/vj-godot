@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://0h5x1pm8vl0y"]
+[gd_scene load_steps=8 format=3 uid="uid://0h5x1pm8vl0y"]
 
 [ext_resource type="Script" uid="uid://c5ugjkko01xr4" path="res://Escenas/menu_principal.gd" id="1_ft1ng"]
-[ext_resource type="Texture2D" uid="uid://o4vvmw4ob3tk" path="res://free-swamp-game-tileset-pixel-art/2 Background/Layers/1.png" id="1_xv3xs"]
+[ext_resource type="Texture2D" uid="uid://bj0yhn5yhbn6r" path="res://free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png" id="2_15krf"]
+[ext_resource type="FontFile" uid="uid://du5eg32ge5lhm" path="res://Assets/Fonts/Kings-Regular.ttf" id="2_d8lex"]
+[ext_resource type="Texture2D" uid="uid://epntt28kv6sp" path="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_1.png" id="3_yo4kt"]
+[ext_resource type="Texture2D" uid="uid://cbg8jq7nn02b" path="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_2.png" id="4_15krf"]
+[ext_resource type="Texture2D" uid="uid://dw16fk64dfoas" path="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_3.png" id="5_j2d8q"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ft1ng"]
-texture = ExtResource("1_xv3xs")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opkeq"]
+bg_color = Color(0.08837687, 0.036727432, 0.15150386, 1)
 
 [node name="Menu_principal" type="Control"]
 layout_mode = 3
@@ -22,51 +26,77 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_ft1ng")
+theme_override_styles/panel = SubResource("StyleBoxFlat_opkeq")
+
+[node name="Starfield02512x512" type="Sprite2D" parent="Panel"]
+position = Vector2(576, 322.5)
+scale = Vector2(2.2539063, 1.2675781)
+texture = ExtResource("2_15krf")
 
 [node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -122.0
+offset_top = 178.0
+offset_right = 122.0
+offset_bottom = 253.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_d8lex")
+theme_override_font_sizes/font_size = 53
+text = "SilverWheel"
+
+[node name="Iniciar" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -69.5
-offset_top = -11.5
-offset_right = 69.5
-offset_bottom = 11.5
+offset_left = -58.5
+offset_top = 54.0
+offset_right = 68.0
+offset_bottom = 102.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Nombre del juego"
-
-[node name="Iniciar" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -145.0
-offset_top = 107.0
-offset_right = -40.0
-offset_bottom = 147.0
-grow_horizontal = 2
-grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.81494796, 8.7116656e-05, 0.65772474, 1)
 text = "Iniciar Partida"
 
 [node name="Salir" type="Button" parent="."]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 70.0
-offset_top = 107.0
-offset_right = 187.0
-offset_bottom = 147.0
+offset_left = -58.5
+offset_top = 142.0
+offset_right = 58.5
+offset_bottom = 182.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.8968147, 0.0033470124, 0.80719644, 1)
 text = "Salir"
+
+[node name="MoonPhase1" type="Sprite2D" parent="."]
+position = Vector2(578.00006, 292)
+scale = Vector2(0.6328125, 0.6328125)
+texture = ExtResource("3_yo4kt")
+
+[node name="MoonPhase1" type="Sprite2D" parent="MoonPhase1"]
+position = Vector2(184.8888, -282.86414)
+scale = Vector2(0.6328125, 0.6328125)
+texture = ExtResource("3_yo4kt")
+
+[node name="MoonPhase2" type="Sprite2D" parent="."]
+position = Vector2(578, 89)
+scale = Vector2(0.5546875, 0.5546875)
+texture = ExtResource("4_15krf")
+
+[node name="MoonPhase3" type="Sprite2D" parent="."]
+position = Vector2(443, 116)
+scale = Vector2(0.4609375, 0.4609375)
+texture = ExtResource("5_j2d8q")
 
 [connection signal="pressed" from="Iniciar" to="." method="_on_iniciar_pressed"]
