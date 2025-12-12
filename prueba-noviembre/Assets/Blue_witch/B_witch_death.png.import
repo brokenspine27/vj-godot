@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmiogk21hplln"
-path="res://.godot/imported/B_witch_death.png-e5e37dc95cc232bda78b1ec181e15dd3.ctex"
+path="res://.godot/imported/B_witch_death.png-9218e940d41e59f835842b1515330600.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Blue_witch/B_witch_death.png"
-dest_files=["res://.godot/imported/B_witch_death.png-e5e37dc95cc232bda78b1ec181e15dd3.ctex"]
+source_file="res://Assets/Blue_witch/B_witch_death.png"
+dest_files=["res://.godot/imported/B_witch_death.png-9218e940d41e59f835842b1515330600.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caok5qjxyos26"
-path="res://.godot/imported/3.png-5f116f5f81eff7a4dc8f34774431b60d.ctex"
+path="res://.godot/imported/3.png-b0664c366c2fbafa26015b64be06f57b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/3 Objects/Stones/3.png"
-dest_files=["res://.godot/imported/3.png-5f116f5f81eff7a4dc8f34774431b60d.ctex"]
+source_file="res://Assets/free-swamp-game-tileset-pixel-art/3 Objects/Stones/3.png"
+dest_files=["res://.godot/imported/3.png-b0664c366c2fbafa26015b64be06f57b.ctex"]
 
 [params]
 

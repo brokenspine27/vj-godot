@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8ochlm1rph0n"
-path="res://.godot/imported/Flag.png-a0fbcc760ecbf6a0b5add5d37a29c516.ctex"
+path="res://.godot/imported/Flag.png-6491c5380d26127f780eb541d633dc1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/4 Animated objects/Flag.png"
-dest_files=["res://.godot/imported/Flag.png-a0fbcc760ecbf6a0b5add5d37a29c516.ctex"]
+source_file="res://Assets/free-swamp-game-tileset-pixel-art/4 Animated objects/Flag.png"
+dest_files=["res://.godot/imported/Flag.png-6491c5380d26127f780eb541d633dc1b.ctex"]
 
 [params]
 

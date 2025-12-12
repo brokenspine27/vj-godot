@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dldhr5d1gfafh"
-path="res://.godot/imported/B_witch_attack.png-c0a4519c0f7ae520ff76ef0c1494c797.ctex"
+path="res://.godot/imported/B_witch_attack.png-b67e793fa395a5cf9416c1116c34eb76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Blue_witch/B_witch_attack.png"
-dest_files=["res://.godot/imported/B_witch_attack.png-c0a4519c0f7ae520ff76ef0c1494c797.ctex"]
+source_file="res://Assets/Blue_witch/B_witch_attack.png"
+dest_files=["res://.godot/imported/B_witch_attack.png-b67e793fa395a5cf9416c1116c34eb76.ctex"]
 
 [params]
 

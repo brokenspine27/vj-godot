@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbg8jq7nn02b"
-path="res://.godot/imported/Moon_Phase_2.png-b00404ac0cdbfb3ceae7f606c084277a.ctex"
+path="res://.godot/imported/Moon_Phase_2.png-3b07dfbf7c66008f62fad371e582f432.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_2.png"
-dest_files=["res://.godot/imported/Moon_Phase_2.png-b00404ac0cdbfb3ceae7f606c084277a.ctex"]
+source_file="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Moon_Phase_2.png"
+dest_files=["res://.godot/imported/Moon_Phase_2.png-3b07dfbf7c66008f62fad371e582f432.ctex"]
 
 [params]
 

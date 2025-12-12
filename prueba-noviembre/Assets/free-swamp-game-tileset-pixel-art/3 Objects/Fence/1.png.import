@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bni6xhyr6jgvw"
-path="res://.godot/imported/1.png-5208e28aaef522bb7f9a035e1a58b282.ctex"
+path="res://.godot/imported/1.png-7dfd35d57c9bc6334ed049fc5bb13a79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/3 Objects/Fence/1.png"
-dest_files=["res://.godot/imported/1.png-5208e28aaef522bb7f9a035e1a58b282.ctex"]
+source_file="res://Assets/free-swamp-game-tileset-pixel-art/3 Objects/Fence/1.png"
+dest_files=["res://.godot/imported/1.png-7dfd35d57c9bc6334ed049fc5bb13a79.ctex"]
 
 [params]
 

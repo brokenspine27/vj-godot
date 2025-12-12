@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bar7macni30n5"
-path="res://.godot/imported/2.png-46fb00d7e53580fde4776b54bca3ae93.ctex"
+path="res://.godot/imported/2.png-7a1e442e5207d4f800644f09c7947c44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/3 Objects/Willows/2.png"
-dest_files=["res://.godot/imported/2.png-46fb00d7e53580fde4776b54bca3ae93.ctex"]
+source_file="res://Assets/free-swamp-game-tileset-pixel-art/3 Objects/Willows/2.png"
+dest_files=["res://.godot/imported/2.png-7a1e442e5207d4f800644f09c7947c44.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj0yhn5yhbn6r"
-path="res://.godot/imported/Starfield_02-512x512.png-150ae0533e17a2b6fac4b7a66fb55495.ctex"
+path="res://.godot/imported/Starfield_02-512x512.png-748f9e3e1bef7183ab72c42d633d99a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png"
-dest_files=["res://.godot/imported/Starfield_02-512x512.png-150ae0533e17a2b6fac4b7a66fb55495.ctex"]
+source_file="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Starfield_02-512x512.png"
+dest_files=["res://.godot/imported/Starfield_02-512x512.png-748f9e3e1bef7183ab72c42d633d99a5.ctex"]
 
 [params]
 

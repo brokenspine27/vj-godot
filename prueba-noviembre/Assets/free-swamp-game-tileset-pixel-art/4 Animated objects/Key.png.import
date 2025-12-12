@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df7la6uccimnh"
-path="res://.godot/imported/Key.png-6952861b5efade4063d217a71eab9170.ctex"
+path="res://.godot/imported/Key.png-8dd5946832ef0d6ac9aeeae3211e3be0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://free-swamp-game-tileset-pixel-art/4 Animated objects/Key.png"
-dest_files=["res://.godot/imported/Key.png-6952861b5efade4063d217a71eab9170.ctex"]
+source_file="res://Assets/free-swamp-game-tileset-pixel-art/4 Animated objects/Key.png"
+dest_files=["res://.godot/imported/Key.png-8dd5946832ef0d6ac9aeeae3211e3be0.ctex"]
 
 [params]
 
