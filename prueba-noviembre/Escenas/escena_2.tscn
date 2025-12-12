@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://rfd7fdvpsh33"]
+[gd_scene load_steps=16 format=3 uid="uid://rfd7fdvpsh33"]
 
 [ext_resource type="Texture2D" uid="uid://bi0apy4k6c4sn" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Layers/3.png" id="2_0w31f"]
 [ext_resource type="Texture2D" uid="uid://bnng8myh3dep4" path="res://Assets/free-swamp-game-tileset-pixel-art/2 Background/Layers/2.png" id="2_rngm7"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://d2tmtp6r3te7g" path="res://Escenas/jumpscare_area.gd" id="10_1kwhq"]
 [ext_resource type="Texture2D" uid="uid://65nfeg5dqqvs" path="res://Escenas/moon_horror.jpg" id="11_1f2m0"]
 [ext_resource type="AudioStream" uid="uid://bwe2wrtscq6xy" path="res://Assets/Sounds/jumpscare-4-206597.mp3" id="11_bot0m"]
+[ext_resource type="Texture2D" uid="uid://dfdi8wuaku2jf" path="res://Assets/free-swamp-game-tileset-pixel-art/3 Objects/Stones/2.png" id="13_id284"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1kwhq"]
 size = Vector2(1150, 65)
@@ -91,6 +92,25 @@ visible = false
 position = Vector2(1003, 433.49997)
 scale = Vector2(0.47666657, 0.475)
 texture = ExtResource("11_1f2m0")
+
+[node name="lapida" type="Sprite2D" parent="."]
+position = Vector2(1062, 476)
+texture = ExtResource("13_id284")
+
+[node name="warning" type="Label" parent="."]
+offset_left = 994.0
+offset_top = 426.0
+offset_right = 1120.0
+offset_bottom = 449.0
+text = "espíritu maligno"
+
+[node name="instruccion" type="Label" parent="."]
+offset_left = 229.0
+offset_top = 173.0
+offset_right = 269.0
+offset_bottom = 196.0
+text = "debes encontrar todas las runas para ganar
+luego no tengas miedo a saltar al vacío..."
 
 [connection signal="body_entered" from="transition_2" to="transition_2" method="_on_body_entered"]
 [connection signal="body_entered" from="jumpscare_area" to="jumpscare_area" method="_on_body_entered"]
